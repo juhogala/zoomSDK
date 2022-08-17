@@ -86,7 +86,7 @@ function websdkready() {
     document.getElementById("meeting_pwd").value = "";
     document.getElementById("meeting_lang").value = "en-US";
     document.getElementById("meeting_role").value = 0;
-    window.location.href = "/index.html";
+    window.location.href = "https://index.html";
   });
 
   // click join meeting button
@@ -113,7 +113,7 @@ function websdkready() {
           console.log(res.result);
           meetingConfig.signature = res.result;
           meetingConfig.sdkKey = SDK_KEY;
-          var joinUrl = "/meeting.html?" + testTool.serialize(meetingConfig);
+          var joinUrl = "https://meeting.html?" + testTool.serialize(meetingConfig);
           console.log(joinUrl);
           window.open(joinUrl, "_blank");
         },
@@ -148,7 +148,7 @@ function websdkready() {
         meetingConfig.sdkKey = SDK_KEY;
         var joinUrl =
           testTool.getCurrentDomain() +
-          "/meeting.html?" +
+          "https://meeting.html?" +
           testTool.serialize(meetingConfig);
         document.getElementById('copy_link_value').setAttribute('link', joinUrl);
         copyToClipboard('copy_link_value');
