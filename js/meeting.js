@@ -3,10 +3,6 @@ window.addEventListener('DOMContentLoaded', function(event) {
   websdkready();
 });
 
-function getRandomInt(min,max) { 
-  Math.floor(Math.random()*(max-min))+min;
-}
-
 function websdkready() {
   var testTool = window.testTool;
   // get meeting args from url

@@ -3,6 +3,10 @@ window.addEventListener('DOMContentLoaded', function(event) {
   websdkready();
 });
 
+function getRandomInt(min,max) { 
+  Math.floor(Math.random()*(max-min))+min;
+}
+
 function websdkready() {
   var testTool = window.testTool;
   if (testTool.isMobileDevice()) {
@@ -114,12 +118,13 @@ function websdkready() {
           window.open(joinUrl, "_blank");
         },
       });
+
     });
 
   function copyToClipboard(elementId) {
     var aux = document.createElement("input");
     aux.setAttribute("value", document.getElementById(elementId).getAttribute('link'));
-    document.body.appendChild(aux);  
+    document.body.appendChild(aux);
     aux.select();
     document.execCommand("copy");
     document.body.removeChild(aux);
