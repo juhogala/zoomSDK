@@ -28,7 +28,7 @@ function websdkready() {
       );
     })(),
     passWord: tmpArgs.pwd,
-    leaveUrl: "/index.html",
+    leaveUrl: "https://juhogala.github.io/zoomSDK/",
     role: parseInt(tmpArgs.role, 10),
     userEmail: (function () {
       try {
@@ -60,7 +60,7 @@ function websdkready() {
       webEndpoint: meetingConfig.webEndpoint,
       disableCORP: !window.crossOriginIsolated, // default true
       // disablePreview: false, // default false
-      externalLinkPage: './externalLinkPage.html',
+      externalLinkPage: 'https://juhogala.github.io/zoomSDK/externalLinkPage.html',
       success: function () {
         console.log(meetingConfig);
         console.log("signature", signature);
