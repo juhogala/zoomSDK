@@ -86,7 +86,7 @@ function websdkready() {
     document.getElementById("meeting_pwd").value = "";
     document.getElementById("meeting_lang").value = "en-US";
     document.getElementById("meeting_role").value = 0;
-    window.location.href = "https://juhogala.github.io/zoomSDK/index.html";
+    //window.location.href = "https://juhogala.github.io/zoomSDK/index.html";
   });
 
   // click join meeting button
